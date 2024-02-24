@@ -1,0 +1,86 @@
+  <!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>AUTO FB BOT MAKER</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <a class="navbar-brand" href="#">𝗛𝗼𝗺𝗲 </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="margin-right: 70px;">
+            <ul class="navbar-nav">
+               <li class="nav-item active">
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span>
+                  </a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Features </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="#">Cookies Extractor</a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="/step_by_step_guide">Simple Guide</a>
+                  </div>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="online_user">Active</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div class="container">
+         <h1 class="col text-center" style="font-size: 20px; padding: 10px;">𝗖3𝗖 𝗙𝗕𝗦𝗧𝗔𝗧𝗘</h1>
+         <form id="json-form" onsubmit="submitForm(event)">
+            <div class="row">
+               <div class="col-md-12">
+                  <textarea id="json-data" class="form-control centered-textarea center-placeholder" placeholder=""></textarea>
+               </div>
+            </div>
+         </form>
+         <p style=" margin-top: 10px"></p>
+      </div>
+      <div class="container">
+         <h1 class="col text-center" style="font-size: 20px; padding: 10px;">𝗕𝗢𝗧 𝗦𝗘𝗧-𝗨𝗣
+         </h1>
+         <p style="color: #FFF; margin-top: 10px">
+         <p></p>
+         <div class="container" id="listOfCommands">
+            <h1 style="font-size: 16px; padding: 10px;">Please choose your commands by tapping on the respective options.</h1>
+            <button class="btn btn-primary" onclick="selectAllCommands()">Select all commands</button>
+         </div>
+         <div class="container" id="listOfCommandsEvent">
+            <h1 style="font-size: 16px; padding: 10px;">Please choose your event commands by tapping on the respective options.</h1>
+            <button class="btn btn-primary" onclick="selectAllEvents()">Select all events</button>
+         </div>
+         <div class="container" id="prefixOfCommands">
+            <h1 style="font-size: 16px; padding: 10px;">𝗕𝗢𝗧 𝗣𝗥𝗘𝗙𝗜𝗫 (𝗢𝗣𝗧𝗜𝗢𝗡𝗔𝗟)</h1>
+            <input type="text" id="inputOfPrefix">
+         </div>
+         <div class="container" id="adminOfCommands">
+            <h1 style="font-size: 16px; padding: 10px;">𝗔𝗗𝗠𝗜𝗡 𝗨𝗜𝗗 (𝗢𝗣𝗧𝗜𝗢𝗡𝗔𝗟)</h1>
+            <input type="text" id="inputOfAdmin">
+         </div>
+         <label style="font-size: 14px; display: flex; align-items: center; padding: 22px;">
+         <input type="checkbox" id="agreeCheckbox" style="color: #FFF; margin-right: 10px;">CHECK TO CONFIRM!</label>
+         <div class="col text-center">
+            <button class="btn btn-primary" onclick="State()" disabled id="submitButton" style="width: 100%">Submit</button>
+         </div>
+      </div>
+      <div id="result" class="container text-center" style="display: none;"></div>
+      <div class="footer">
+        <p style="color: pink;">Time: <span id="time"></span></p>
+        <p style="color: pink;">Ping: <span id="ping"></span></p>
+      </div>
+      <script src="script.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+   </body>
+</html>
